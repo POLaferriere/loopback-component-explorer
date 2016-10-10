@@ -21,18 +21,20 @@ body {
 }
 
 body #header {
-  background-color: #08592b !important;
+  background-color: #007EAF !important;
   position: fixed;
   width: 100%;
   top: 0;
+  padding: 22px 14px !important;
 }
 
 body #header a#logo {
-  padding: 20px 0 20px 60px !important;
+  padding: 20px 0 20px 80px !important;
 }
 
 body #header form#api_selector .input a#explore {
-  background-color: #7dbd33 !important;
+  background-color: #41C9E0 !important;
+  cursor: pointer;
 }
 
 
@@ -323,7 +325,7 @@ li.operation.delete .content > .content-type > div > label {
     padding-right: 30px;
 }
 
-/* 
+/*
 FIXME: Separate the overrides from the rest of the styles, rather than override screen.css entirely.
 */
 /* Improve spacing when the browser window is small */
@@ -334,4 +336,9 @@ FIXME: Separate the overrides from the rest of the styles, rather than override 
 
 #api_selector {
   padding: 0px 20px;
+}
+
+.swagger-section #header a#logo {
+  background-image: url("../images/pharm_logo.png")!important;
+  background-size: contain;
 }
